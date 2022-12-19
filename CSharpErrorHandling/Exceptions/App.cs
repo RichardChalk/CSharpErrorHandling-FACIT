@@ -7,47 +7,26 @@ public class App
 
     public void Run()
     {
-        // Ett exempel
-        calculateDifferenceTryCatch();
-
-
         // Övning 1 ======================================
         // DivideByZero();
 
 
         // Övning 2 ======================================
-        // try
-        // {
-        //     TriggerStackOverflow(100, 200, 300, 400);
-        // }
-        // catch (StackOverflowException ex)
-        // {
-        //     Console.WriteLine(ex.Message);
-        // }
+        //try
+        //{
+        //    TriggerStackOverflow(100, 200, 300, 400);
+        //}
+        // OBS: Denna catch kommer aldrig ens att anropas!
+        //catch (StackOverflowException ex) 
+        //{
+        //    Console.WriteLine(ex.Message);
+        //}
 
 
         // Övning 3 ======================================
         // Calc();
     }
 
-    // Ett Exempel =======================================================
-    public void calculateDifferenceTryCatch()
-    {
-        try
-        {
-            int difference = 0;
-            int[] number = new int[5] { 1, 2, 3, 4, 5 };
-            for (int init = 1; init <= 5; init++)
-            {
-                difference = difference - number[init];
-            }
-
-        }
-        catch (IndexOutOfRangeException ex)
-        {
-            Console.WriteLine("Utanför index");
-        }
-    }
 
     // 1: DIVIDEBYZERO ===========================================
     private void DivideByZero()
@@ -67,7 +46,6 @@ public class App
             {
                 Console.WriteLine("Oj oj kan inte dela med 0 ju");
             }
-
         }
     }
 
