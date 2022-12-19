@@ -7,16 +7,15 @@ public class App
 
     public void Run()
     {
-        // Ett par exempel
-        // calculateDifference();
-        // calculateDifferenceTryCatch();
+        // Ett exempel
+        calculateDifferenceTryCatch();
 
 
-        // Övning 1
+        // Övning 1 ======================================
         // DivideByZero();
 
 
-        // Övning 2
+        // Övning 2 ======================================
         // try
         // {
         //     TriggerStackOverflow(100, 200, 300, 400);
@@ -27,25 +26,11 @@ public class App
         // }
 
 
-        // Övning 3
+        // Övning 3 ======================================
         // Calc();
     }
 
-    // Exempel 1 =======================================================
-    public bool calculateDifference()
-    {
-        int difference = 0;
-        int[] number = new int[5] { 1, 2, 3, 4, 5 };
-        if (number.Length <= 5) return false;
-        for (int init = 1; init <= 5; init++)
-        {
-            difference = difference - number[init];
-        }
-
-        return true;
-    }
-
-    // Exempel 2 =======================================================
+    // Ett Exempel =======================================================
     public void calculateDifferenceTryCatch()
     {
         try
